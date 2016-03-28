@@ -34,7 +34,7 @@ public class JavaFx extends Application{
 			public void handle(ActionEvent arg0) {
 				UsernameInput = UsernameTxtFld.getText();
 				PasswordInput = PasswordTxtFld.getText();
-				int[] AccountTypes = {String.Administrator, String.Guest};
+				String[] AccountTypes = {"Administrator", "Guest"};
 				if(UsernameTrue.equals(UsernameInput) && PasswordTrue.equals(PasswordInput)) {
 					int Selection = {int}JOptionPane.showInputDialog(null, "Please choose an account type", "Account Type Options", JOptionPane.PLAIN_MESSAGE, null, AccountTypes, AccountTypes[1]);		
 				} else {
